@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.app h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: 700;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.quiz {
+    padding: 10px 0;
+}
+
+.quiz h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #f4f4f4;
+    color: #2c3e50;
+    font-weight: 600;
+    width: 100%;
+    border: 2px solid #2c3e50;
+    padding: 12px 16px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2c3e50;
+    color: white;
+    transform: scale(1.02);
+}
+
+.btn.correct {
+    background-color: #27ae60;
+    color: white;
+    border-color: #27ae60;
+}
+
+.btn.incorrect {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+}
+
+#next-btn {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    width: 180px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    padding: 12px 20px;
+    margin: 25px auto 0;
+    display: none;
+    font-size: 16px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+#next-btn:hover {
+    background: #2980b9;
+}
+.footer {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    padding: 18px 0 12px 0;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 16px 16px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12);
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 10;
+    animation: fadeIn 0.8s;
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
